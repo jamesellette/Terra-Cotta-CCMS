@@ -74,28 +74,39 @@ This is a comprehensive enterprise platform requiring sophisticated state manage
   - **Accessibility Checker**: Submit content → AI analyzes for accessibility issues, reading level, inclusive language → Receive score (0-100), issues list, and improvement suggestions
 - **Success criteria**: Content generation produces relevant variations in <3 seconds, translations maintain tone and context, product descriptions are compelling and accurate, image attributes extraction provides detailed structured data, alt text meets WCAG guidelines, semantic search returns contextually relevant results, anomaly detection accuracy >94%, propensity scores calculate instantly, natural language queries answer correctly with specific metrics, accessibility scores align with WCAG standards, all AI features have software fallbacks when service unavailable
 
-### 6. AI Assistant
+### 6. Color Wheel Tool
+- **Functionality**: Comprehensive color management system with palette generation using color harmony algorithms (complementary, analogous, triadic, split-complementary, tetradic, square, monochromatic), image color extraction (up to 32 colors), gradient builder with custom steps, theme library management, and export in multiple formats (HEX, RGB, HSL, CMYK, CSS variables, JSON, ASE, ACO)
+- **Purpose**: Streamline design workflow with intelligent color selection, extraction, and management tools for consistent brand identity
+- **Trigger**: Navigate to Color Wheel section via sidebar
+- **Progression**:
+  - **Palette Generator**: Select base color → Choose harmony type → View generated palette → Copy individual color values → Export in desired format → Save to library
+  - **Image Extractor**: Upload image → Set maximum colors to extract → AI extracts dominant colors → View color distribution → Copy or add colors to gradient
+  - **Gradient Builder**: Add colors to gradient → Adjust step count → Preview smooth gradient → Use for CSS or design tools
+  - **Saved Palettes**: Browse saved palettes → Load existing palette → Delete unused palettes → Export any saved palette
+- **Success criteria**: Harmony algorithms generate visually balanced palettes, image extraction accurately identifies dominant colors, gradients generate smoothly with any color count, all export formats produce valid output files, saved palettes persist between sessions, copy-to-clipboard works for all color formats, WCAG contrast ratios calculate correctly
+
+### 7. AI Assistant
 - **Functionality**: Contextual AI help for content generation, optimization suggestions, and predictive insights
 - **Purpose**: Accelerates content creation and provides intelligent recommendations
 - **Trigger**: Click AI assistant icon or use keyboard shortcut
 - **Progression**: Open assistant panel → Enter prompt or select template → AI generates content → Review and edit → Accept or regenerate → Insert into content
 - **Success criteria**: Response generation under 3 seconds, suggestions are contextually relevant, seamless integration into workflow
 
-### 7. Media Library (Integrated in CMS)
+### 8. Media Library (Integrated in CMS)
 - **Functionality**: Contextual AI help for content generation, optimization suggestions, and predictive insights
 - **Purpose**: Accelerates content creation and provides intelligent recommendations
 - **Trigger**: Click AI assistant icon or use keyboard shortcut
 - **Progression**: Open assistant panel → Enter prompt or select template → AI generates content → Review and edit → Accept or regenerate → Insert into content
 - **Success criteria**: Response generation under 3 seconds, suggestions are contextually relevant, seamless integration into workflow
 
-### 6. Media Library (Integrated in CMS)
+### 8. Media Library (Integrated in CMS)
 - **Functionality**: Centralized asset management for images, videos, documents with organization and search
 - **Purpose**: Efficient storage, retrieval, and reuse of digital assets across content and commerce
 - **Trigger**: Access from Content → Media tab
 - **Progression**: Browse media grid → Search/filter by type → Upload new assets → View details → Download or delete
 - **Success criteria**: Grid layout displays assets clearly, filtering works instantly, upload creates properly sized entries
 
-### 7. User & Permissions Management
+### 9. User & Permissions Management
 - **Functionality**: Team member management with role-based access control and activity tracking
 - **Purpose**: Security and workflow management through granular permission controls
 - **Trigger**: Navigate to Settings → Users section (admin only)
@@ -191,13 +202,14 @@ Animations should feel responsive and purposeful—never decorative. Motion comm
   - Lists: Row hover background, selected rows with checkbox, loading state shows skeleton
 
 - **Icon Selection**:
-  - Navigation: House (dashboard), Article (content), ShoppingCart (commerce), ChartLine (analytics), Robot (AI services)
+  - Navigation: House (dashboard), Article (content), ShoppingCart (commerce), ChartLine (analytics), Robot (AI services), Palette (color wheel)
   - Actions: Plus (create), Pencil (edit), Trash (delete), Check (save), X (cancel), MagnifyingGlass (search)
   - Content: Image, Video, File, Link, Code, TextT (formatting)
   - Status: CheckCircle (success), Warning (alert), Info, Clock (pending)
   - AI: Sparkle (AI assistant/generation), Robot (AI services section), Brain, MagicWand (suggestions), TextAa (content generation), Translate (translation), ChartLineUp (analytics AI), Users (audience), FileText (summarizer), ArrowsClockwise (regenerate)
   - User: User, Users (team), Gear (settings), SignOut
   - Commerce: Package (orders), Tag (pricing), Barcode (inventory), CreditCard (payments)
+  - Color Tools: Palette (color wheel), DownloadSimple (export), Copy (clipboard), FloppyDisk (save palette)
 
 - **Spacing**:
   - Component padding: p-4 (16px) for cards, p-6 (24px) for major sections

@@ -7,7 +7,8 @@ import {
   Sparkle,
   List,
   X,
-  Robot
+  Robot,
+  Palette
 } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Dashboard } from '@/components/Dashboard'
@@ -16,10 +17,11 @@ import { Commerce } from '@/components/Commerce'
 import { Analytics } from '@/components/Analytics'
 import { AIAssistant } from '@/components/AIAssistant'
 import { AIServices } from '@/components/AIServices'
+import { ColorWheel } from '@/components/ColorWheel'
 import { Toaster } from '@/components/ui/sonner'
 import { cn } from '@/lib/utils'
 
-type View = 'dashboard' | 'content' | 'commerce' | 'analytics' | 'ai-services'
+type View = 'dashboard' | 'content' | 'commerce' | 'analytics' | 'ai-services' | 'color-wheel'
 
 const navItems = [
   { id: 'dashboard' as View, label: 'Dashboard', icon: House },
@@ -27,6 +29,7 @@ const navItems = [
   { id: 'commerce' as View, label: 'Commerce', icon: ShoppingCart },
   { id: 'analytics' as View, label: 'Analytics', icon: ChartLine },
   { id: 'ai-services' as View, label: 'AI Services', icon: Robot },
+  { id: 'color-wheel' as View, label: 'Color Wheel', icon: Palette },
 ]
 
 function App() {
@@ -46,6 +49,8 @@ function App() {
         return <Analytics />
       case 'ai-services':
         return <AIServices />
+      case 'color-wheel':
+        return <ColorWheel />
       default:
         return <Dashboard />
     }
