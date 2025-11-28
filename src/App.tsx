@@ -8,7 +8,8 @@ import {
   List,
   X,
   Robot,
-  Palette
+  Palette,
+  Shield
 } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Dashboard } from '@/components/Dashboard'
@@ -18,10 +19,11 @@ import { Analytics } from '@/components/Analytics'
 import { AIAssistant } from '@/components/AIAssistant'
 import { AIServices } from '@/components/AIServices'
 import { ColorWheel } from '@/components/ColorWheel'
+import { Authentication } from '@/components/auth/Authentication'
 import { Toaster } from '@/components/ui/sonner'
 import { cn } from '@/lib/utils'
 
-type View = 'dashboard' | 'content' | 'commerce' | 'analytics' | 'ai-services' | 'color-wheel'
+type View = 'dashboard' | 'content' | 'commerce' | 'analytics' | 'ai-services' | 'color-wheel' | 'auth'
 
 const navItems = [
   { id: 'dashboard' as View, label: 'Dashboard', icon: House },
@@ -30,6 +32,7 @@ const navItems = [
   { id: 'analytics' as View, label: 'Analytics', icon: ChartLine },
   { id: 'ai-services' as View, label: 'AI Services', icon: Robot },
   { id: 'color-wheel' as View, label: 'Color Wheel', icon: Palette },
+  { id: 'auth' as View, label: 'Auth & Security', icon: Shield },
 ]
 
 function App() {
@@ -51,6 +54,8 @@ function App() {
         return <AIServices />
       case 'color-wheel':
         return <ColorWheel />
+      case 'auth':
+        return <Authentication />
       default:
         return <Dashboard />
     }

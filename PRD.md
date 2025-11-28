@@ -85,28 +85,34 @@ This is a comprehensive enterprise platform requiring sophisticated state manage
   - **Saved Palettes**: Browse saved palettes → Load existing palette → Delete unused palettes → Export any saved palette
 - **Success criteria**: Harmony algorithms generate visually balanced palettes, image extraction accurately identifies dominant colors, gradients generate smoothly with any color count, all export formats produce valid output files, saved palettes persist between sessions, copy-to-clipboard works for all color formats, WCAG contrast ratios calculate correctly
 
-### 7. AI Assistant
+### 7. Authentication & Authorization
+- **Functionality**: Comprehensive user, role, and permission management with RBAC, session management, API keys, audit logging, password policies, and 2FA configuration
+- **Purpose**: Enterprise-grade security and access control for managing team members, tracking activity, and enforcing security policies
+- **Trigger**: Navigate to Auth & Security section via sidebar
+- **Progression**:
+  - **Users**: Browse user list → View user details (roles, status, MFA, last login) → Add/edit user → Assign roles → Configure status and 2FA → Save → Resend invitation if needed
+  - **Roles**: View role cards → Create role → Define name and description → Select granular permissions across categories (Content, Commerce, Analytics, Users, System) → Save → Assign to users
+  - **Sessions**: View active/expired sessions → Monitor device, browser, location, and IP → View last activity and expiry → Revoke individual sessions → Revoke all sessions except current
+  - **API Keys**: View API key list → Create new key → Define name and scopes → Set expiration → Generate key → Copy and save key securely → Monitor usage → Revoke keys
+  - **Audit Logs**: Browse comprehensive activity log → Filter by resource type (user, role, content, product, order, session, API key, settings) → Filter by severity (info, warning, error, critical) → Search by user, action, or resource → View detailed change history
+  - **Password Policies**: Configure minimum length (8-32 chars) → Toggle complexity requirements (uppercase, lowercase, numbers, special chars) → Enable common password prevention → Configure expiry and history → Set account lockout rules → Configure 2FA requirements (all users vs admins only) → Select allowed 2FA methods (authenticator, SMS, email) → Set grace period → Test password against policy → Save settings
+- **Success criteria**: User CRUD operations work correctly, role permissions enforce properly across platform, sessions track accurately with device/location details, session revocation takes effect immediately, API keys generate securely with proper scoping, audit logs capture all security-relevant actions with complete change history, password policy validation works in real-time, 2FA settings apply to appropriate user groups, test password feature accurately validates against policy rules
+
+### 8. AI Assistant
 - **Functionality**: Contextual AI help for content generation, optimization suggestions, and predictive insights
 - **Purpose**: Accelerates content creation and provides intelligent recommendations
 - **Trigger**: Click AI assistant icon or use keyboard shortcut
 - **Progression**: Open assistant panel → Enter prompt or select template → AI generates content → Review and edit → Accept or regenerate → Insert into content
 - **Success criteria**: Response generation under 3 seconds, suggestions are contextually relevant, seamless integration into workflow
 
-### 8. Media Library (Integrated in CMS)
-- **Functionality**: Contextual AI help for content generation, optimization suggestions, and predictive insights
-- **Purpose**: Accelerates content creation and provides intelligent recommendations
-- **Trigger**: Click AI assistant icon or use keyboard shortcut
-- **Progression**: Open assistant panel → Enter prompt or select template → AI generates content → Review and edit → Accept or regenerate → Insert into content
-- **Success criteria**: Response generation under 3 seconds, suggestions are contextually relevant, seamless integration into workflow
-
-### 8. Media Library (Integrated in CMS)
+### 9. Media Library (Integrated in CMS)
 - **Functionality**: Centralized asset management for images, videos, documents with organization and search
 - **Purpose**: Efficient storage, retrieval, and reuse of digital assets across content and commerce
 - **Trigger**: Access from Content → Media tab
 - **Progression**: Browse media grid → Search/filter by type → Upload new assets → View details → Download or delete
 - **Success criteria**: Grid layout displays assets clearly, filtering works instantly, upload creates properly sized entries
 
-### 9. User & Permissions Management
+### 10. User & Permissions Management
 - **Functionality**: Team member management with role-based access control and activity tracking
 - **Purpose**: Security and workflow management through granular permission controls
 - **Trigger**: Navigate to Settings → Users section (admin only)
@@ -202,7 +208,7 @@ Animations should feel responsive and purposeful—never decorative. Motion comm
   - Lists: Row hover background, selected rows with checkbox, loading state shows skeleton
 
 - **Icon Selection**:
-  - Navigation: House (dashboard), Article (content), ShoppingCart (commerce), ChartLine (analytics), Robot (AI services), Palette (color wheel)
+  - Navigation: House (dashboard), Article (content), ShoppingCart (commerce), ChartLine (analytics), Robot (AI services), Palette (color wheel), Shield (auth & security)
   - Actions: Plus (create), Pencil (edit), Trash (delete), Check (save), X (cancel), MagnifyingGlass (search)
   - Content: Image, Video, File, Link, Code, TextT (formatting)
   - Status: CheckCircle (success), Warning (alert), Info, Clock (pending)
@@ -210,6 +216,7 @@ Animations should feel responsive and purposeful—never decorative. Motion comm
   - User: User, Users (team), Gear (settings), SignOut
   - Commerce: Package (orders), Tag (pricing), Barcode (inventory), CreditCard (payments)
   - Color Tools: Palette (color wheel), DownloadSimple (export), Copy (clipboard), FloppyDisk (save palette)
+  - Auth & Security: Shield (auth section, roles), Key (sessions, API keys), LockKey (API keys), ClockCounterClockwise (audit logs), ListChecks (policies), ShieldCheck (2FA), EnvelopeSimple (invites), DeviceMobile (mobile sessions), Desktop (desktop sessions)
 
 - **Spacing**:
   - Component padding: p-4 (16px) for cards, p-6 (24px) for major sections
