@@ -56,7 +56,32 @@ This is a comprehensive enterprise platform requiring sophisticated state manage
   - **Custom Reports**: Build reports with custom metrics and dimensions → Schedule automated runs → Export to S3, BigQuery, Snowflake, CSV, Excel, or PDF
 - **Success criteria**: Real-time data updates within 2 seconds, AI detection accuracy >94%, funnel visualizations render instantly, attribution models calculate correctly, A/B tests track statistical significance, custom reports generate and export successfully, anomaly alerts trigger appropriately, segments update dynamically
 
-### 5. AI Assistant
+### 5. AI Services Platform
+- **Functionality**: Comprehensive suite of AI-powered tools including generative content variations, translation, product description generation, image analysis with automated alt text, semantic search, anomaly detection, audience propensity scoring, natural language data queries, and accessibility checking
+- **Purpose**: Enhance productivity and decision-making through intelligent automation of content creation, analysis, and optimization tasks
+- **Trigger**: Navigate to AI Services section via sidebar
+- **Progression**: 
+  - **Content Generation**: Enter content → Configure tone/length → Generate variations → Review and copy outputs
+  - **Content Summarizer**: Input long content → Set max length → Generate concise summary → Copy result
+  - **Translator**: Enter content → Select target language → Translate → Review translation
+  - **Product Descriptions**: Input product name, category, features → AI generates compelling description → Copy to product catalog
+  - **Image Analysis**: Enter image URL → Extract detailed attributes (objects, colors, composition, usage suggestions) → View structured results
+  - **Alt Text Generator**: Provide image URL → AI generates accessibility-compliant alt text → Copy for use
+  - **Semantic Search**: Enter natural language query → AI searches with context understanding → View relevance-ranked results
+  - **Anomaly Detection**: Analyze metrics data → AI detects unusual patterns → View anomalies with severity levels, descriptions, and suggested actions
+  - **Propensity Scoring**: Enter user ID → AI predicts purchase probability, churn risk, lifetime value → View segment and recommended actions
+  - **Natural Language Query**: Ask questions about data in plain English → AI analyzes and provides insights → View answer with metrics
+  - **Accessibility Checker**: Submit content → AI analyzes for accessibility issues, reading level, inclusive language → Receive score (0-100), issues list, and improvement suggestions
+- **Success criteria**: Content generation produces relevant variations in <3 seconds, translations maintain tone and context, product descriptions are compelling and accurate, image attributes extraction provides detailed structured data, alt text meets WCAG guidelines, semantic search returns contextually relevant results, anomaly detection accuracy >94%, propensity scores calculate instantly, natural language queries answer correctly with specific metrics, accessibility scores align with WCAG standards, all AI features have software fallbacks when service unavailable
+
+### 6. AI Assistant
+- **Functionality**: Contextual AI help for content generation, optimization suggestions, and predictive insights
+- **Purpose**: Accelerates content creation and provides intelligent recommendations
+- **Trigger**: Click AI assistant icon or use keyboard shortcut
+- **Progression**: Open assistant panel → Enter prompt or select template → AI generates content → Review and edit → Accept or regenerate → Insert into content
+- **Success criteria**: Response generation under 3 seconds, suggestions are contextually relevant, seamless integration into workflow
+
+### 7. Media Library (Integrated in CMS)
 - **Functionality**: Contextual AI help for content generation, optimization suggestions, and predictive insights
 - **Purpose**: Accelerates content creation and provides intelligent recommendations
 - **Trigger**: Click AI assistant icon or use keyboard shortcut
@@ -166,11 +191,11 @@ Animations should feel responsive and purposeful—never decorative. Motion comm
   - Lists: Row hover background, selected rows with checkbox, loading state shows skeleton
 
 - **Icon Selection**:
-  - Navigation: House (dashboard), Article (content), ShoppingCart (commerce), ChartLine (analytics)
+  - Navigation: House (dashboard), Article (content), ShoppingCart (commerce), ChartLine (analytics), Robot (AI services)
   - Actions: Plus (create), Pencil (edit), Trash (delete), Check (save), X (cancel), MagnifyingGlass (search)
   - Content: Image, Video, File, Link, Code, TextT (formatting)
   - Status: CheckCircle (success), Warning (alert), Info, Clock (pending)
-  - AI: Sparkle (AI assistant), Robot, Brain, MagicWand (suggestions)
+  - AI: Sparkle (AI assistant/generation), Robot (AI services section), Brain, MagicWand (suggestions), TextAa (content generation), Translate (translation), ChartLineUp (analytics AI), Users (audience), FileText (summarizer), ArrowsClockwise (regenerate)
   - User: User, Users (team), Gear (settings), SignOut
   - Commerce: Package (orders), Tag (pricing), Barcode (inventory), CreditCard (payments)
 

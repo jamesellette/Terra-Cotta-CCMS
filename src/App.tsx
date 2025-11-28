@@ -6,7 +6,8 @@ import {
   ChartLine, 
   Sparkle,
   List,
-  X
+  X,
+  Robot
 } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Dashboard } from '@/components/Dashboard'
@@ -14,16 +15,18 @@ import { Content } from '@/components/Content'
 import { Commerce } from '@/components/Commerce'
 import { Analytics } from '@/components/Analytics'
 import { AIAssistant } from '@/components/AIAssistant'
+import { AIServices } from '@/components/AIServices'
 import { Toaster } from '@/components/ui/sonner'
 import { cn } from '@/lib/utils'
 
-type View = 'dashboard' | 'content' | 'commerce' | 'analytics'
+type View = 'dashboard' | 'content' | 'commerce' | 'analytics' | 'ai-services'
 
 const navItems = [
   { id: 'dashboard' as View, label: 'Dashboard', icon: House },
   { id: 'content' as View, label: 'Content', icon: Article },
   { id: 'commerce' as View, label: 'Commerce', icon: ShoppingCart },
   { id: 'analytics' as View, label: 'Analytics', icon: ChartLine },
+  { id: 'ai-services' as View, label: 'AI Services', icon: Robot },
 ]
 
 function App() {
@@ -41,6 +44,8 @@ function App() {
         return <Commerce />
       case 'analytics':
         return <Analytics />
+      case 'ai-services':
+        return <AIServices />
       default:
         return <Dashboard />
     }
