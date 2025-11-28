@@ -41,12 +41,20 @@ This is a comprehensive enterprise platform requiring sophisticated state manage
   - **Quotes**: Create B2B quote → Add items with custom pricing → Set expiration → Send to customer → Track acceptance → Convert to order
 - **Success criteria**: Real-time inventory updates across warehouses, order status changes reflect immediately, product catalog handles large SKU counts efficiently, pricing rules apply correctly based on customer groups, promotions calculate discounts accurately, quotes track through full lifecycle, AI generates relevant product descriptions, multi-currency support works correctly, B2B company hierarchies enforce permissions
 
-### 4. Analytics Dashboard
-- **Functionality**: Visual data representation of content performance, commerce metrics, and user engagement
-- **Purpose**: Data-driven insights for content optimization and business decisions
+### 4. Analytics Platform
+- **Functionality**: Comprehensive analytics suite with real-time dashboards, customer journey tracking, funnel analysis, attribution modeling, A/B testing, AI-powered anomaly detection, audience segmentation, and custom report builder with data warehouse exports
+- **Purpose**: Enterprise-grade analytics for data-driven decision making across content, commerce, and marketing operations
 - **Trigger**: Navigate to Analytics section
-- **Progression**: Analytics overview → Select metric category → Filter by date range → View detailed charts → Export data
-- **Success criteria**: Charts render within 1 second, data updates reflect latest information, export generates complete dataset
+- **Progression**: 
+  - **Real-time Dashboard**: Live metrics update every 2 seconds → Monitor active visitors, conversions, traffic sources → View device breakdown
+  - **Customer Journey**: Track user paths from entry to conversion → Analyze touchpoint sequences → Identify drop-off points → View entry/exit pages
+  - **Funnel Analysis**: Visualize conversion funnel stages → Measure drop-off rates → View cohort retention → Track conversion trends over time
+  - **Attribution Modeling**: Compare attribution models (linear, first-touch, last-touch, time-decay, position-based) → Analyze conversion paths → Calculate channel ROI and ROAS
+  - **A/B Testing**: Create experiments → Define variants and traffic allocation → Monitor statistical significance → Review performance metrics → Declare winners
+  - **Anomaly Detection**: AI automatically detects unusual patterns → Alert on critical issues → Investigate anomalies with ML insights → Track resolution status
+  - **Audience Segmentation**: AI-powered customer segmentation → View segment distribution and value → Access behavioral targeting criteria → Create targeted campaigns
+  - **Custom Reports**: Build reports with custom metrics and dimensions → Schedule automated runs → Export to S3, BigQuery, Snowflake, CSV, Excel, or PDF
+- **Success criteria**: Real-time data updates within 2 seconds, AI detection accuracy >94%, funnel visualizations render instantly, attribution models calculate correctly, A/B tests track statistical significance, custom reports generate and export successfully, anomaly alerts trigger appropriately, segments update dynamically
 
 ### 5. AI Assistant
 - **Functionality**: Contextual AI help for content generation, optimization suggestions, and predictive insights

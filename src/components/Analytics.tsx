@@ -32,6 +32,14 @@ import {
   Legend
 } from 'recharts'
 import { useState } from 'react'
+import { RealtimeDashboard } from './analytics/RealtimeDashboard'
+import { CustomerJourney } from './analytics/CustomerJourney'
+import { FunnelAnalysis } from './analytics/FunnelAnalysis'
+import { AttributionModeling } from './analytics/AttributionModeling'
+import { ABTesting } from './analytics/ABTesting'
+import { AnomalyDetection } from './analytics/AnomalyDetection'
+import { AudienceSegmentation } from './analytics/AudienceSegmentation'
+import { CustomReportBuilder } from './analytics/CustomReportBuilder'
 
 const pageViewsData = [
   { date: 'Jan', views: 4200, users: 1200 },
@@ -91,12 +99,50 @@ export function Analytics() {
         </Select>
       </div>
 
-      <Tabs defaultValue="overview" className="space-y-6">
-        <TabsList>
+      <Tabs defaultValue="realtime" className="space-y-6">
+        <TabsList className="grid grid-cols-3 lg:grid-cols-9 gap-1">
+          <TabsTrigger value="realtime">Real-time</TabsTrigger>
           <TabsTrigger value="overview">Overview</TabsTrigger>
-          <TabsTrigger value="content">Content</TabsTrigger>
-          <TabsTrigger value="commerce">Commerce</TabsTrigger>
+          <TabsTrigger value="journey">Journey</TabsTrigger>
+          <TabsTrigger value="funnel">Funnel</TabsTrigger>
+          <TabsTrigger value="attribution">Attribution</TabsTrigger>
+          <TabsTrigger value="abtesting">A/B Tests</TabsTrigger>
+          <TabsTrigger value="anomaly">Anomaly</TabsTrigger>
+          <TabsTrigger value="segments">Segments</TabsTrigger>
+          <TabsTrigger value="reports">Reports</TabsTrigger>
         </TabsList>
+
+        <TabsContent value="realtime" className="space-y-6">
+          <RealtimeDashboard />
+        </TabsContent>
+
+        <TabsContent value="journey" className="space-y-6">
+          <CustomerJourney />
+        </TabsContent>
+
+        <TabsContent value="funnel" className="space-y-6">
+          <FunnelAnalysis />
+        </TabsContent>
+
+        <TabsContent value="attribution" className="space-y-6">
+          <AttributionModeling />
+        </TabsContent>
+
+        <TabsContent value="abtesting" className="space-y-6">
+          <ABTesting />
+        </TabsContent>
+
+        <TabsContent value="anomaly" className="space-y-6">
+          <AnomalyDetection />
+        </TabsContent>
+
+        <TabsContent value="segments" className="space-y-6">
+          <AudienceSegmentation />
+        </TabsContent>
+
+        <TabsContent value="reports" className="space-y-6">
+          <CustomReportBuilder />
+        </TabsContent>
 
         <TabsContent value="overview" className="space-y-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
