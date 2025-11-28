@@ -27,11 +27,19 @@ This is a comprehensive enterprise platform requiring sophisticated state manage
 - **Success criteria**: Block-based page editor works smoothly, versioning preserves history, media uploads organize properly, taxonomies enable content organization, content models define reusable schemas
 
 ### 3. Commerce Management
-- **Functionality**: Product catalog management, pricing, inventory tracking, and order processing
-- **Purpose**: Complete e-commerce operations from product creation to order fulfillment
+- **Functionality**: Complete e-commerce engine with product catalog (supports millions of SKUs), category management, flexible pricing (tiered, group-specific, promotional), inventory tracking across multiple warehouses, order management with full lifecycle, customer management including B2B companies with buyer hierarchies, quote management for B2B sales, promotions and coupons, subscription support, and AI-powered product recommendations
+- **Purpose**: Enterprise-grade commerce operations from product creation to order fulfillment, supporting both B2C and B2B business models with sophisticated pricing strategies
 - **Trigger**: Navigate to Commerce section
-- **Progression**: Products view → Add/edit product → Configure pricing/inventory → Save → View orders → Process order → Update status
-- **Success criteria**: Real-time inventory updates, order status changes reflect immediately, product images upload and display correctly
+- **Progression**: 
+  - **Products**: Browse catalog → Filter/search → Add/edit product → Configure variants, pricing, inventory → AI-generate descriptions → Save
+  - **Categories**: View category tree → Create category → Set hierarchy and position → Activate
+  - **Orders**: View order list → Filter by status → View order details (items, customer, shipping) → Update status → Process fulfillment
+  - **Inventory**: View inventory across warehouses → Monitor stock levels → Track low stock alerts → Manage reorder points
+  - **Pricing**: Create price books → Define currency and customer groups → Set tiered pricing → Configure validity periods
+  - **Customers**: Browse customer list → Add/edit customer → Assign to groups/companies → Track order history and lifetime value
+  - **Promotions**: Create promotion → Set discount type (%, fixed, free shipping, BOGO) → Define coupon code → Configure conditions and limits → Schedule start/end dates → Activate
+  - **Quotes**: Create B2B quote → Add items with custom pricing → Set expiration → Send to customer → Track acceptance → Convert to order
+- **Success criteria**: Real-time inventory updates across warehouses, order status changes reflect immediately, product catalog handles large SKU counts efficiently, pricing rules apply correctly based on customer groups, promotions calculate discounts accurately, quotes track through full lifecycle, AI generates relevant product descriptions, multi-currency support works correctly, B2B company hierarchies enforce permissions
 
 ### 4. Analytics Dashboard
 - **Functionality**: Visual data representation of content performance, commerce metrics, and user engagement
