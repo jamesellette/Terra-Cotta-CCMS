@@ -19,12 +19,12 @@ This is a comprehensive enterprise platform requiring sophisticated state manage
 - **Progression**: Login → Dashboard loads with animated metric cards → User scans KPIs → Clicks quick action or navigates via sidebar
 - **Success criteria**: All metrics load within 1 second, navigation to any section completes in under 2 clicks
 
-### 2. Content Management
-- **Functionality**: Create, edit, organize, and publish content across multiple channels with rich text editing
-- **Purpose**: Enables content teams to manage digital content efficiently without technical dependencies
+### 2. Content Management System (CMS)
+- **Functionality**: Comprehensive CMS with pages, content fragments, media library, taxonomies, sites, and content models
+- **Purpose**: Enables enterprise-grade content management with structured data, reusable components, and multisite support
 - **Trigger**: Navigate to Content section via sidebar
-- **Progression**: Content list view → Filter/search content → Select item to edit → Rich editor opens → Make changes → Preview → Publish
-- **Success criteria**: Content saves automatically, preview accurately reflects published state, search returns results in under 500ms
+- **Progression**: Select module tab (Pages/Fragments/Models/Media/Taxonomy/Sites) → Browse/search items → Create/edit → Configure settings → Save with versioning
+- **Success criteria**: Block-based page editor works smoothly, versioning preserves history, media uploads organize properly, taxonomies enable content organization, content models define reusable schemas
 
 ### 3. Commerce Management
 - **Functionality**: Product catalog management, pricing, inventory tracking, and order processing
@@ -47,12 +47,12 @@ This is a comprehensive enterprise platform requiring sophisticated state manage
 - **Progression**: Open assistant panel → Enter prompt or select template → AI generates content → Review and edit → Accept or regenerate → Insert into content
 - **Success criteria**: Response generation under 3 seconds, suggestions are contextually relevant, seamless integration into workflow
 
-### 6. Media Library
+### 6. Media Library (Integrated in CMS)
 - **Functionality**: Centralized asset management for images, videos, documents with organization and search
 - **Purpose**: Efficient storage, retrieval, and reuse of digital assets across content and commerce
-- **Trigger**: Access from content editor or dedicated Media section
-- **Progression**: Open media library → Browse or search → Filter by type/tags → Select asset → View details → Insert or download
-- **Success criteria**: Thumbnail generation automatic, search indexes metadata, drag-and-drop upload works reliably
+- **Trigger**: Access from Content → Media tab
+- **Progression**: Browse media grid → Search/filter by type → Upload new assets → View details → Download or delete
+- **Success criteria**: Grid layout displays assets clearly, filtering works instantly, upload creates properly sized entries
 
 ### 7. User & Permissions Management
 - **Functionality**: Team member management with role-based access control and activity tracking
